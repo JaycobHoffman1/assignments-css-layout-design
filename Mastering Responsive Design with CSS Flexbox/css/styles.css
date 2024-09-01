@@ -8,54 +8,27 @@
 header {
     padding: 50px 0;
     border-bottom: 1px solid #000000;
-    background-image: url("../images/background-image.jpg")
+    background-image: url("../images/background-image.jpg");
 }
 
 header div {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 350px;
+    justify-content: center;
     padding: 40px 0;
-    border: 1px solid #000000;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
     background-color: #ffffff7b;
 }
 
 h1 {
+    margin: 0 auto;
     font-family: "Poppins", sans-serif;
     font-size: 100px;
     font-weight: 600;
     font-style: normal;
 }
 
-header p {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    font-style: italic;
-}
-
-@media (max-width: 1000px) {
-    header div {
-        flex-direction: row;
-        justify-content: center;
-        padding: none;
-        border: none;
-        background-color: #ffffff00;
-    }
-
-    header p {
-        display: none;
-    }
-}
-
 @media (max-width: 650px) {
-    header div {
-        flex-direction: column;
-        align-items: center;
-    }
-
     h1 {
         font-size: 50px;
     }
@@ -177,6 +150,26 @@ img {
 @media (max-width: 600px) {
     img {
         width: 300px;
+    }
+
+    .heading {
+        font-family: "Raleway", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        font-style: normal;
+    }
+    
+    .text {
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+@media (max-width: 350px) {
+    img {
+        width: 200px;
     }
 
     .heading {
